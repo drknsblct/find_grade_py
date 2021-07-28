@@ -1,5 +1,5 @@
-from find_grade_functions import findClassAverageScore, findStudentAverage
+from find_grade_functions import findClassAverage, findStudentAverage
 
-# findClassAverageScore()
+# findClassAverage()
 
 findStudentAverage()

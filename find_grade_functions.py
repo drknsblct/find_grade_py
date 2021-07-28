@@ -45,7 +45,7 @@ def findStudentAverage():
     print(f'\nGrade: {sum/6:.2f}')
 
 
-def findClassAverageScore():
+def findClassAverage():
     students = []
 
     loops = int(input("How many students? "))
