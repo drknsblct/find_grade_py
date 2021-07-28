@@ -1,5 +1,6 @@
 import sqlite3
 from find_grade_functions import courses, findStudentAverage, findClassAverage
+from sql_functions import execute_courses, execute_students
 
 conn = sqlite3.connect(':memory:')
 c = conn.cursor()
@@ -21,7 +22,9 @@ while True:
         print("Exiting program!\n")
     elif answer == 1:
         print("\n<<< Add Courses >>>")
+        execute_courses()
         courses()
+        conn.close()
     elif answer == 2:
         pass
     elif answer == 3:
@@ -32,7 +35,9 @@ while True:
     elif answer == 5:
         pass
     elif answer == 6:
-        print("\n Find Class Average Score")
+        print("\n<<< Find Class Average Score >>>")
+        execute_students()
         findClassAverage()
+        conn.close()
     else:
         print("Input must be between 0 - 6!\n")
