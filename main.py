@@ -17,6 +17,7 @@ while True:
 
     if answer == 0:
         print("Exiting program!\n")
+        break
 
     elif answer == 1:
         print("\n<<< Add Courses >>>")
