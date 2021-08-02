@@ -4,11 +4,11 @@ class Student:
         self.name = name
         self.grade = grade
 
-    def addGrade(self, grade):
+    def add_grade(self, grade):
         self.grade += grade
 
-    def getGrade(self):
+    def get_grade(self):
         return self.grade
 
-    def getName(self):
+    def get_name(self):
         return self.name

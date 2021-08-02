@@ -7,8 +7,8 @@ class Course:
     # def modifyGrade(self):
     #     return self.grade * (self.percent / 100)
 
-    def getGrade(self):
+    def get_grade(self):
         return self.grade
 
-    def getName(self):
+    def get_name(self):
         return self.name
